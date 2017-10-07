@@ -10,13 +10,13 @@ Dalam post ini saya ingin berbagi tutorial dasar pada linux, yaitu *tutorial mem
 Dalam kasus ini, saya berencana membuat virtual wireless adapter yang berada dalam mode monitor , sedangkan physical wireless adapter saya berada dalam mode managed. biasanya saya menggunakannya untuk pengoperasian mdk3, fluxion, dan tool yang membutuhkan sedikitnya 2 wireless adapter.
 
 1. Cek physical wireless adapter dengan perintah : *iwconfig*
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680[iwconfig]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680[]
 di ss tersebut terlihat bahwa physical wireless adapter saya berada dalam interface *wlan0*
 2. Menambahkan virtual wireless adapter dengan perintah: *iw wlan0 interface add mon0 type monitor*
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[iw wlan0 interface add mon0 type monitor]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[]
 *wlan0* : adalah interface physical wireless address saya, ditiap distro linux berbeda, ada yang *wlp2s0b1*.*mon0* : adalah nama interface virtual wireless adapter saya , ada dapat menggantinya sesuka anda. monitor : merupakan  tipe/jenis virtual wireless adapter yang saya buat , ada empat tipe  yaitu : managed, ibss, monitor, mesh, wds.
 3.	lihat apakah virtual wireless adapter yang kita buat berhasil
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[berhasil]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[]
 ya ternyata virtual wireless adapter yang saya buat berhasil, dengan adanya interface baru yaitu *mon0*.
 
 Sebagai penutup saya akan membagikan tool script bash yang saya buat untuk memudahkan membuat virtual wireless adapter dalam mode monitor.ini linknya https://intip.in/iamntfnd
