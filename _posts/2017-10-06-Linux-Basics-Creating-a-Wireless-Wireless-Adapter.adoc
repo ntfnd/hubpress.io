@@ -22,6 +22,7 @@ ya ternyata virtual wireless adapter yang saya buat berhasil, dengan adanya inte
 Sebagai penutup saya akan membagikan tool script bash yang saya buat untuk memudahkan membuat virtual wireless adapter dalam mode monitor.ini linknya https://intip.in/iamntfnd
 
 Sekian, terima kasih dan sampai jumpa lagi.
+image::http://asciidoctor.org/images/octocat.jpg[GitHub mascot]
 
 
 
