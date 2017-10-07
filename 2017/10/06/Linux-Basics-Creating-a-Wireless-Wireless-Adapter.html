@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <script>
+        // UNCOMMENT AND USE YOUR VARIABLES FOR DISQUS AND GOOGLE ANALYTICS
+        // var d_id  = '',
+        //     g_id  = 'UA-XXXXXXXX-X', // Format: UA-########-#, Example: UA-11220899-1
+        //     g_url = 'XXXXXXX.XXX' // Format: #####.####, Example: webdesignporto.com
+    </script>
+
+    <title>Dasar Linux: Membuat Virtual Wireless Adapter</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="//ntfnd.github.io/themes/the-shell/assets/highlighter/prettify.css?v=1507369135229" />
+    <link rel="stylesheet" type="text/css" href="//ntfnd.github.io/themes/the-shell/assets/css/screen.css?v=1507369135229" />
+
+    <link rel="canonical" href="https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="Linux And Networking Is FUN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Dasar Linux: Membuat Virtual Wireless Adapter" />
+    <meta property="og:description" content="Dalam post ini saya ingin berbagi tutorial dasar pada linux, yaitu tutorial membuat virtual wireless adapter.disini saya membuat virtual wireless adapter dari physical wireless adapter yang sudah terdapat di laptop saya dengan interface wlan0. Dalam kasus ini, saya berencana membuat virtual wireless adapter yang berada dalam mode monitor , sedangk" />
+    <meta property="og:url" content="https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html" />
+    <meta property="og:image" content="https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w&#x3D;1462" />
+    <meta property="article:published_time" content="2017-10-06T00:00:00.000Z" />
+    <meta property="article:tag" content="Networking" />
+    <meta property="article:tag" content="Linux" />
+    <meta property="article:tag" content="Trick For Linux" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dasar Linux: Membuat Virtual Wireless Adapter" />
+    <meta name="twitter:description" content="Dalam post ini saya ingin berbagi tutorial dasar pada linux, yaitu tutorial membuat virtual wireless adapter.disini saya membuat virtual wireless adapter dari physical wireless adapter yang sudah terdapat di laptop saya dengan interface wlan0. Dalam kasus ini, saya berencana membuat virtual wireless adapter yang berada dalam mode monitor , sedangk" />
+    <meta name="twitter:url" content="https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html" />
+    <meta name="twitter:image:src" content="https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w&#x3D;1462" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Linux And Networking Is FUN",
+    "author": {
+        "@type": "Person",
+        "name": "ntfnd",
+        "image": "https://avatars2.githubusercontent.com/u/24233520?v=4",
+        "url": "https://ntfnd.github.io/author/ntfnd/"
+    },
+    "headline": "Dasar Linux: Membuat Virtual Wireless Adapter",
+    "url": "https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html",
+    "datePublished": "2017-10-06T00:00:00.000Z",
+    "image": "https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=1462",
+    "keywords": "Networking, Linux, Trick For Linux",
+    "description": "Dalam post ini saya ingin berbagi tutorial dasar pada linux, yaitu tutorial membuat virtual wireless adapter.disini saya membuat virtual wireless adapter dari physical wireless adapter yang sudah terdapat di laptop saya dengan interface wlan0. Dalam kasus ini, saya berencana membuat virtual wireless adapter yang berada dalam mode monitor , sedangk"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="Linux And Networking Is FUN" href="https://ntfnd.github.io/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+</head>
+<body class="post-template tag-Networking tag-Linux tag-Trick-For-Linux">
+
+    
+
+<main class="content" role="main">
+
+    <article class="post tag-Networking tag-Linux tag-Trick-For-Linux">
+
+        <header class="post-header">
+            <a id="blog-logo" href="https://ntfnd.github.io">
+                    Linux And Networking Is FUN
+            </a>
+        </header>
+
+
+        <span class="post-meta"><time datetime="2017-10-06">06 Oct 2017</time> on <a href="https://ntfnd.github.io/tag/Networking/">Networking</a> | <a href="https://ntfnd.github.io/tag/Linux/">Linux</a> | <a href="https://ntfnd.github.io/tag/Trick-For-Linux/">Trick For Linux</a></span>
+
+        <h1 class="post-title">Dasar Linux: Membuat Virtual Wireless Adapter</h1>
+
+        <section class="post-content">
+            <div class="paragraph">
+<p>Dalam post ini saya ingin berbagi tutorial dasar pada linux, yaitu <strong>tutorial membuat virtual wireless adapter</strong>.disini saya membuat virtual wireless adapter dari physical wireless adapter yang sudah terdapat di laptop saya dengan interface wlan0.</p>
+</div>
+<div class="paragraph">
+<p>Dalam kasus ini, saya berencana membuat virtual wireless adapter yang berada dalam mode monitor , sedangkan physical wireless adapter saya berada dalam mode managed. biasanya saya menggunakannya untuk pengoperasian mdk3, fluxion, dan tool yang membutuhkan sedikitnya 2 wireless adapter.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Cek physical wireless adapter dengan perintah : <strong>iwconfig</strong>
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680[iwconfig]
+di ss tersebut terlihat bahwa physical wireless adapter saya berada dalam interface <strong>wlan0</strong></p>
+</li>
+<li>
+<p>Menambahkan virtual wireless adapter dengan perintah: <strong>iw wlan0 interface add mon0 type monitor</strong>
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[iw wlan0 interface add mon0 type monitor]
+<strong>wlan0</strong> : adalah interface physical wireless address saya, ditiap distro linux berbeda, ada yang <strong>wlp2s0b1</strong>.<strong>mon0</strong> : adalah nama interface virtual wireless adapter saya , ada dapat menggantinya sesuka anda. monitor : merupakan  tipe/jenis virtual wireless adapter yang saya buat , ada empat tipe  yaitu : managed, ibss, monitor, mesh, wds.</p>
+</li>
+<li>
+<p>lihat apakah virtual wireless adapter yang kita buat berhasil
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[berhasil]
+ya ternyata virtual wireless adapter yang saya buat berhasil, dengan adanya interface baru yaitu <strong>mon0</strong>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Sebagai penutup saya akan membagikan tool script bash yang saya buat untuk memudahkan membuat virtual wireless adapter dalam mode monitor.ini linknya <a href="https://intip.in/iamntfnd" class="bare">https://intip.in/iamntfnd</a></p>
+</div>
+<div class="paragraph">
+<p>Sekian, terima kasih dan sampai jumpa lagi.</p>
+</div>
+        </section>
+
+
+        <footer class="post-footer">
+
+                <section class="author">
+                    <h4>ntfnd</h4>
+                    <p></p>
+                </section>
+
+            <section class="share">
+                <h4>Share this</h4>
+                <a class="icon-twitter" href="http://twitter.com/share?text=Dasar Linux: Membuat Virtual Wireless Adapter&url=https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+    </article>
+
+</main>
+
+
+    <footer class="site-footer">
+        <!-- <a class="subscribe icon-feed" href="https://ntfnd.github.io/rss/"><span class="tooltip">Subscribe!</span></a> -->
+        <div class="inner">
+             <section class="copyright">All content copyright <a href="/">Linux And Networking Is FUN</a> &copy; 2017 &bull; All rights reserved.</section>
+             <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</span></a> in <a href="https://github.com/mityalebedev/The-Shell">The Shell</a> theme.</section>
+        </div>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+
+    <script type='text/javascript' src="//ntfnd.github.io/themes/the-shell/assets/highlighter/prettify.js?v=1507369135229"></script>
+    <script type='text/javascript' src="//ntfnd.github.io/themes/the-shell/assets/js/shell.js?v=1507369135229"></script>
+</body>
+</html>
