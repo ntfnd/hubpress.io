@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//ntfnd.github.io/themes/saga/assets/css/style.css?v=1507371113870" rel="stylesheet" type="text/css">
-    <link href="//ntfnd.github.io/themes/saga/assets/css/animate.min.css?v=1507371113870" rel="stylesheet" type="text/css">
+    <link href="//ntfnd.github.io/themes/saga/assets/css/style.css?v=1507371260441" rel="stylesheet" type="text/css">
+    <link href="//ntfnd.github.io/themes/saga/assets/css/animate.min.css?v=1507371260441" rel="stylesheet" type="text/css">
     <link href="https://ntfnd.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html" />
     <meta name="referrer" content="origin" />
@@ -93,19 +93,40 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Cek physical wireless adapter dengan perintah : <strong>iwconfig</strong>
-image::[<a href="https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680" class="bare">https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680</a>]
+<p>Cek physical wireless adapter dengan perintah : <strong>iwconfig</strong></p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">image</dt>
+<dd>
+<p><a href="https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680" class="bare">https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680</a>
 di ss tersebut terlihat bahwa physical wireless adapter saya berada dalam interface <strong>wlan0</strong></p>
+</dd>
+</dl>
+</div>
 </li>
 <li>
-<p>Menambahkan virtual wireless adapter dengan perintah: <strong>iw wlan0 interface add mon0 type monitor</strong>
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[]
+<p>Menambahkan virtual wireless adapter dengan perintah: <strong>iw wlan0 interface add mon0 type monitor</strong></p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">image</dt>
+<dd>
+<p><a href="https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680" class="bare">https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680</a>
 <strong>wlan0</strong> : adalah interface physical wireless address saya, ditiap distro linux berbeda, ada yang <strong>wlp2s0b1</strong>.<strong>mon0</strong> : adalah nama interface virtual wireless adapter saya , ada dapat menggantinya sesuka anda. monitor : merupakan  tipe/jenis virtual wireless adapter yang saya buat , ada empat tipe  yaitu : managed, ibss, monitor, mesh, wds.</p>
+</dd>
+</dl>
+</div>
 </li>
 <li>
-<p>lihat apakah virtual wireless adapter yang kita buat berhasil
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[]
+<p>lihat apakah virtual wireless adapter yang kita buat berhasil</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">image</dt>
+<dd>
+<p><a href="https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680" class="bare">https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680</a>
 ya ternyata virtual wireless adapter yang saya buat berhasil, dengan adanya interface baru yaitu <strong>mon0</strong>.</p>
+</dd>
+</dl>
+</div>
 </li>
 </ol>
 </div>
@@ -143,7 +164,7 @@ ya ternyata virtual wireless adapter yang saya buat berhasil, dengan adanya inte
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//ntfnd.github.io/themes/saga/assets/js/scripts.js?v=1507371113870"></script>
+    <script src="//ntfnd.github.io/themes/saga/assets/js/scripts.js?v=1507371260441"></script>
     
 </body>
 </html>
