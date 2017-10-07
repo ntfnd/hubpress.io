@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "saga"
+    "name": "the-shell"
   },
   "urls": {
     "site": "https://ntfnd.github.io",
     "hubpress": "https://ntfnd.github.io",
-    "theme": "//ntfnd.github.io/themes/roon",
+    "theme": "//ntfnd.github.io/themes/saga",
     "images": "https://ntfnd.github.io/images"
   },
   "initialisationConfigComponent": {
@@ -35,7 +35,7 @@
     "disqus": ""
   },
   "socialnetwork": {
-    "email": "",
+    "email": "roniardiyanto13@gmail.com",
     "github": "",
     "twitter": "",
     "facebook": "",
