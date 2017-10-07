@@ -11,7 +11,7 @@
   "urls": {
     "site": "https://ntfnd.github.io",
     "hubpress": "https://ntfnd.github.io",
-    "theme": "//ntfnd.github.io/themes/the-shell",
+    "theme": "//ntfnd.github.io/themes/saga",
     "images": "https://ntfnd.github.io/images"
   },
   "initialisationConfigComponent": {
