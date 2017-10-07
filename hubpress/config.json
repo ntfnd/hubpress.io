@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "ichi"
+    "name": "ghostium"
   },
   "urls": {
     "site": "https://ntfnd.github.io",
     "hubpress": "https://ntfnd.github.io",
-    "theme": "//ntfnd.github.io/themes/ghostium",
+    "theme": "//ntfnd.github.io/themes/ichi",
     "images": "https://ntfnd.github.io/images"
   },
   "initialisationConfigComponent": {
