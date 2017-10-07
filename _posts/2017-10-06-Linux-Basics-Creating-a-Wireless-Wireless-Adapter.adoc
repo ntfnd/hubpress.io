@@ -10,7 +10,7 @@ Dalam post ini saya ingin berbagi tutorial dasar pada linux, yaitu *tutorial mem
 Dalam kasus ini, saya berencana membuat virtual wireless adapter yang berada dalam mode monitor , sedangkan physical wireless adapter saya berada dalam mode managed. biasanya saya menggunakannya untuk pengoperasian mdk3, fluxion, dan tool yang membutuhkan sedikitnya 2 wireless adapter.
 
 1. Cek physical wireless adapter dengan perintah : *iwconfig*
-image::https://github.com/ntfnd/ntfnd.github.io/master/images/screenshot-from-2017-05-21-18-45-35.png[]
+image::http://github.com/ntfnd/ntfnd.github.io/images/screenshot-from-2017-05-21-18-45-35.png[]
 di ss tersebut terlihat bahwa physical wireless adapter saya berada dalam interface *wlan0*
 2. Menambahkan virtual wireless adapter dengan perintah: *iw wlan0 interface add mon0 type monitor*
 :hp-image: https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680
