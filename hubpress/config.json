@@ -6,12 +6,12 @@
     "cname": ""
   },
   "theme": {
-    "name": "roon"
+    "name": "saga"
   },
   "urls": {
     "site": "https://ntfnd.github.io",
     "hubpress": "https://ntfnd.github.io",
-    "theme": "//ntfnd.github.io/themes/ghostium",
+    "theme": "//ntfnd.github.io/themes/roon",
     "images": "https://ntfnd.github.io/images"
   },
   "initialisationConfigComponent": {
