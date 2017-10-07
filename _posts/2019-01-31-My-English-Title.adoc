@@ -1,0 +1,11 @@
+= Dibuka dengan Bismillah
+
+:hp-image: https://previews.123rf.com/images/hypnocreative/hypnocreative1110/hypnocreative111000103/10976790-Arabic-calligraphy-of-Islamic-phrase-basmalah-bismillah-el-rahman-el-rahim--Stock-Vector.jpg
+:published_at:  2019-01-31
+
+:hp-tags: HubPress, Blog, Open_Source,
+
+:hp-alt-title: My English Title
+
+Bismillahirrahmanirrahim 
+Pertama kali ngeblog di githubpage pake Hubpress.
