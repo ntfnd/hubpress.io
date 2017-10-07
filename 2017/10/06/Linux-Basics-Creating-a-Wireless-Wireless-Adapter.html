@@ -17,8 +17,8 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="//ntfnd.github.io/themes/the-shell/assets/highlighter/prettify.css?v=1507369189084" />
-    <link rel="stylesheet" type="text/css" href="//ntfnd.github.io/themes/the-shell/assets/css/screen.css?v=1507369189084" />
+    <link rel="stylesheet" type="text/css" href="//ntfnd.github.io/themes/the-shell/assets/highlighter/prettify.css?v=1507369571170" />
+    <link rel="stylesheet" type="text/css" href="//ntfnd.github.io/themes/the-shell/assets/css/screen.css?v=1507369571170" />
 
     <link rel="canonical" href="https://ntfnd.github.io/2017/10/06/Linux-Basics-Creating-a-Wireless-Wireless-Adapter.html" />
     <meta name="referrer" content="origin" />
@@ -97,17 +97,17 @@
 <ol class="arabic">
 <li>
 <p>Cek physical wireless adapter dengan perintah : <strong>iwconfig</strong>
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680[iwconfig]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680[]
 di ss tersebut terlihat bahwa physical wireless adapter saya berada dalam interface <strong>wlan0</strong></p>
 </li>
 <li>
 <p>Menambahkan virtual wireless adapter dengan perintah: <strong>iw wlan0 interface add mon0 type monitor</strong>
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[iw wlan0 interface add mon0 type monitor]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[]
 <strong>wlan0</strong> : adalah interface physical wireless address saya, ditiap distro linux berbeda, ada yang <strong>wlp2s0b1</strong>.<strong>mon0</strong> : adalah nama interface virtual wireless adapter saya , ada dapat menggantinya sesuka anda. monitor : merupakan  tipe/jenis virtual wireless adapter yang saya buat , ada empat tipe  yaitu : managed, ibss, monitor, mesh, wds.</p>
 </li>
 <li>
 <p>lihat apakah virtual wireless adapter yang kita buat berhasil
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[berhasil]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[]
 ya ternyata virtual wireless adapter yang saya buat berhasil, dengan adanya interface baru yaitu <strong>mon0</strong>.</p>
 </li>
 </ol>
@@ -173,7 +173,7 @@ ya ternyata virtual wireless adapter yang saya buat berhasil, dengan adanya inte
         hljs.initHighlightingOnLoad();
       </script>
 
-    <script type='text/javascript' src="//ntfnd.github.io/themes/the-shell/assets/highlighter/prettify.js?v=1507369189084"></script>
-    <script type='text/javascript' src="//ntfnd.github.io/themes/the-shell/assets/js/shell.js?v=1507369189084"></script>
+    <script type='text/javascript' src="//ntfnd.github.io/themes/the-shell/assets/highlighter/prettify.js?v=1507369571170"></script>
+    <script type='text/javascript' src="//ntfnd.github.io/themes/the-shell/assets/js/shell.js?v=1507369571170"></script>
 </body>
 </html>

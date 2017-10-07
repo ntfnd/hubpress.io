@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Linux And Networking Is FUN]]></title><description><![CDATA[Learning and Sharing about Linux and Networking]]></description><link>https://ntfnd.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Oct 2017 09:39:49 GMT</lastBuildDate><atom:link href="https://ntfnd.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Dibuka dengan Bismillah]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Linux And Networking Is FUN]]></title><description><![CDATA[Learning and Sharing about Linux and Networking]]></description><link>https://ntfnd.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Oct 2017 09:46:11 GMT</lastBuildDate><atom:link href="https://ntfnd.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Dibuka dengan Bismillah]]></title><description><![CDATA[<div class="paragraph">
 <p>Bismillahirrahmanirrahim
 Pertama kali ngeblog di githubpage pake Hubpress.</p>
 </div>]]></description><link>https://ntfnd.github.io/2018/10/06/My-English-Title.html</link><guid isPermaLink="true">https://ntfnd.github.io/2018/10/06/My-English-Title.html</guid><category><![CDATA[HubPress]]></category><category><![CDATA[Blog]]></category><category><![CDATA[Open_Source]]></category><pubDate>Sat, 06 Oct 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Dasar Linux: Membuat Virtual Wireless Adapter]]></title><description><![CDATA[<div class="paragraph">
@@ -11,17 +11,17 @@ Pertama kali ngeblog di githubpage pake Hubpress.</p>
 <ol class="arabic">
 <li>
 <p>Cek physical wireless adapter dengan perintah : <strong>iwconfig</strong>
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680[iwconfig]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png?w=680[]
 di ss tersebut terlihat bahwa physical wireless adapter saya berada dalam interface <strong>wlan0</strong></p>
 </li>
 <li>
 <p>Menambahkan virtual wireless adapter dengan perintah: <strong>iw wlan0 interface add mon0 type monitor</strong>
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[iw wlan0 interface add mon0 type monitor]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[]
 <strong>wlan0</strong> : adalah interface physical wireless address saya, ditiap distro linux berbeda, ada yang <strong>wlp2s0b1</strong>.<strong>mon0</strong> : adalah nama interface virtual wireless adapter saya , ada dapat menggantinya sesuka anda. monitor : merupakan  tipe/jenis virtual wireless adapter yang saya buat , ada empat tipe  yaitu : managed, ibss, monitor, mesh, wds.</p>
 </li>
 <li>
 <p>lihat apakah virtual wireless adapter yang kita buat berhasil
-image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[berhasil]
+image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[]
 ya ternyata virtual wireless adapter yang saya buat berhasil, dengan adanya interface baru yaitu <strong>mon0</strong>.</p>
 </li>
 </ol>
