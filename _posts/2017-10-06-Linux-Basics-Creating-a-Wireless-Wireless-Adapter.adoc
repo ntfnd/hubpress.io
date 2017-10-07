@@ -13,7 +13,7 @@ Dalam kasus ini, saya berencana membuat virtual wireless adapter yang berada dal
 image::https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-45-35.png[1]
 di ss tersebut terlihat bahwa physical wireless adapter saya berada dalam interface *wlan0*
 2. Menambahkan virtual wireless adapter dengan perintah: *iw wlan0 interface add mon0 type monitor*
-image:: https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680[]
+:hp-image: https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-18-48-50.png?w=680
 *wlan0* : adalah interface physical wireless address saya, ditiap distro linux berbeda, ada yang *wlp2s0b1*.*mon0* : adalah nama interface virtual wireless adapter saya , ada dapat menggantinya sesuka anda. monitor : merupakan  tipe/jenis virtual wireless adapter yang saya buat , ada empat tipe  yaitu : managed, ibss, monitor, mesh, wds.
 3.	lihat apakah virtual wireless adapter yang kita buat berhasil
 image:: https://ntfnd.files.wordpress.com/2017/05/screenshot-from-2017-05-21-19-09-19.png?w=680[]
