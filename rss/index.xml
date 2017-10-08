@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Linux And Networking Is FUN]]></title><description><![CDATA[Learning and Sharing about Linux and Networking]]></description><link>https://ntfnd.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 07 Oct 2017 10:39:01 GMT</lastBuildDate><atom:link href="https://ntfnd.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Dibuka dengan Bismillah]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Linux And Networking Is FUN]]></title><description><![CDATA[Learning and Sharing about Linux and Networking]]></description><link>https://ntfnd.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 08 Oct 2017 07:49:18 GMT</lastBuildDate><atom:link href="https://ntfnd.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Dibuka dengan Bismillah]]></title><description><![CDATA[<div class="paragraph">
 <p>Bismillahirrahmanirrahim
 Pertama kali ngeblog di githubpage pake Hubpress.</p>
 </div>]]></description><link>https://ntfnd.github.io/2018/10/06/My-English-Title.html</link><guid isPermaLink="true">https://ntfnd.github.io/2018/10/06/My-English-Title.html</guid><category><![CDATA[HubPress]]></category><category><![CDATA[Blog]]></category><category><![CDATA[Open_Source]]></category><pubDate>Sat, 06 Oct 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Dasar Linux: Membuat Virtual Wireless Adapter]]></title><description><![CDATA[<div class="paragraph">
@@ -11,7 +11,7 @@ Pertama kali ngeblog di githubpage pake Hubpress.</p>
 <ol class="arabic">
 <li>
 <p>Cek physical wireless adapter dengan perintah : <strong>iwconfig</strong>
-image::http://github.com/ntfnd/ntfnd.github.io/images/screenshot-from-2017-05-21-18-45-35.png[]
+&lt;img src="http://github.com/ntfnd/ntfnd.github.io/images/screenshot-from-2017-05-21-18-45-35.png"&gt;
 di ss tersebut terlihat bahwa physical wireless adapter saya berada dalam interface <strong>wlan0</strong></p>
 </li>
 <li>
