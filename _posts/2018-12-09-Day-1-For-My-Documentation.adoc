@@ -1,0 +1,9 @@
+= Hari 1 : Membuat Blog Ini Sebagai Dokumentasi
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+:hp-image: https://cpahalltalk.com/wp-content/uploads/2017/06/Not-documented-not-done.png
+:published_at: 2018-12-09
+:hp-tags: HubPress, Blog, Open_Source, Daily
+:hp-alt-title: Day 1 : For My Documentation
+
+	Assalamualaikum WR WB
+  Diawali dengan Bismillah, saya ingin dan terus akan berusaha menjadikan blog ini sebagai jejak dan bukti perjalanan atas ilmu saya dan pencapaian yang saya ambil, ibaratnya adalah sebuah dokumentasi, yang nantinya mungkin sewaktu - waktu nanti saya perlu mengakses disebabkan karena keterbatasan ruang pikiran :D
